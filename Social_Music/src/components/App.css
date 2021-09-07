@@ -1,0 +1,154 @@
+button {
+  background-color: #5F9EA0;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 4px 10px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition-duration: 0.4s;
+
+}
+
+button:hover {
+   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button-submit {
+  transition: all 0.5s;
+}
+
+.button-submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-submit:hover span {
+  padding-right: 25px;
+}
+
+.button-submit:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140px;
+}
+
+.form-input {
+    display: block;
+    width: 200px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #444444;
+    margin: 10px auto;
+}
+
+.cancel-button {
+    margin-right: 10px;
+    opacity: 0.8;
+  transition: 0.3s;
+}
+
+.cancel-button:hover {opacity: 1}
+
+
+.follow-button {
+    margin-top: 10px;
+}
+
+.recommendation-name, .recommendation-address, .follow-people-address, .follow-people-name, .follow-people-age {
+    display: inline-block;
+    color: #444444;
+    font-style: italic;
+}
+
+.recommendation-name, .follow-people-name {
+    margin-right: 10px;
+}
+
+.recommendation-address, .follow-people-address {
+    color: rgb(156, 156, 156);
+}
+
+.recommendation-song, .follow-people-recommendation {
+    font-weight: bolder;
+    font-size: 16pt;
+    margin-top: 10px;
+}
+
+
+.UsersForm-name, .UsersForm-address, .UsersForm-age, .UsersForm-state {
+    display: inline;
+    color: #444444;
+     background: #efecdf;
+   font-family: "Courier New", Courier, monospace;
+   font-style: italic;
+    font-weight: bold;
+     font-size: 90%;
+     margin-right: 10px;
+}
+
+.Welcome-form {
+    width: 60%;
+    margin: 50px auto;
+    padding: 15px;
+    position: relative; /*needed for heading4 rule*/
+    z-index: 0; /* again, just for heading4 rule*/
+    border: 7px solid #cecece;
+    border: 7px solid rgba(0,0,0,.05);
+    background: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    font-family: "Helvetica Neue", sans-serif;
+    font-size: 40px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid black;
+    text-transform: uppercase;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+.subheader-form {
+    color: #333; 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 30px; font-weight: 300; 
+    line-height: 25px; 
+    margin: 10 0 72px; 
+    text-align: center;
+}
+
+
